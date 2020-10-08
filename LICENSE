@@ -1,24 +1,33 @@
-This is free and unencumbered software released into the public domain.
+This licence grants you the rights, and only the rights, set out below,
+to access and review the code. If you take advantage of these rights,
+you accept this licence. If you do not accept the licence,
+do not access the code.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+Subject to the terms of this licence, we grant you a licence to access
+and use the code solely for review purposes.
+You may provide the code to anyone else and publish excerpts of it for
+the purposes of review and commentary, provided that when you do so you
+make any recipient of the code aware of the terms of this licence and
+that you attribute the code to the author.
+Other than in respect of those parts of the code that were developed by
+other parties and as specified strictly in accordance with the open
+source and other licences under which those parts of the code have been
+made available, you are not entitled to use or do anything with the
+code for any commercial or other purpose, other than review and
+commentary on it.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+THE CODE IS MADE AVAILABLE "AS-IS" AND WITHOUT ANY EXPRESS OF IMPLIED
+GUARANTEES AS TO FITNESS, MERCHANTABILITY, NON-INFRINGEMENT OR
+OTHERWISE. IT IS NOT BEING PROVIDED IN TRADE BUT ON A VOLUNTARY BASIS
+ON OUR PART AND YOURS AND IS NOT MADE AVAILABE FOR CONSUMER USE OR ANY
+OTHER USE OUTSIDE THE TERMS OF THIS LICENCE. ANYONE ACCESSING THE CODE
+SHOULD HAVE THE REQUISITE EXPERTISE TO SECURE THEIR OWN SYSTEM AND
+DEVICES AND TO ACCESS AND USE THE CODE FOR REVIEW PURPOSES. YOU BEAR
+THE RISK OF ACCESSING AND USING IT. IN PARTICULAR, THE AUTHOR BEARS NO
+LIABILITY FOR ANY INTERFERENCE WITH OR ADVERSE EFFECT ON YOUR SYSTEM
+OR DEVICESAS A RESULT OF YOUR ACCESSING AND USING THE CODE.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-For more information, please refer to <https://unlicense.org>
+The author may suspend, terminate or vary the terms of this licence
+and any access to the code at any time, without notice, for any reason
+or no reason, in respect of any licensee, group of licensees or all
+licensees.
