@@ -1,3 +1,7 @@
 [alias]
-	line = !git log --oneline origin/main..$(git branch --show-current)
-	all = "!f() { git add . && git commit -m $1 && git push; }; f"
+	line = !git log --format=\"%C(auto)%h%d %s\" --boundary origin/$(git config custom.defaultbranch)..
+	log5 = log --oneline -n 5
+	all = "!git add -A && git commit -m $1 && git push #"
+	repull = pull --rebase
+[custom]
+	defaultbranch = main
