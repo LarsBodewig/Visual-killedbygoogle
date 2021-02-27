@@ -7,3 +7,6 @@
 	bla = branch -la
 [custom]
 	defaultbranch = main
+[remote "template"]
+	url = https://github.com/LarsBodewig/Template.git
+	fetch = +refs/heads/main:refs/remotes/template/main
