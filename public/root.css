@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-icon {
+  width: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  font-family: monospace;
+  padding-right: 2rem;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+noscript {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
