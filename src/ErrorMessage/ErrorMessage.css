@@ -1,0 +1,29 @@
+.error {
+  padding: 2rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.error-header {
+  display: flex;
+}
+
+.error-icon {
+  width: 2rem;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.error-title {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.error-message {
+  font-family: "Roboto", sans-serif;
+}
+
+.report-message {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2.5rem;
+  text-align: center;
+}
