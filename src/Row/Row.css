@@ -1,0 +1,13 @@
+.row {
+  border-bottom: 0.05rem solid #cfcfcf;
+}
+
+.row-title {
+  background-color: white;
+  left: 0;
+  text-align: left;
+  position: sticky;
+  z-index: 3;
+  font-weight: normal;
+  padding-left: 1rem;
+}

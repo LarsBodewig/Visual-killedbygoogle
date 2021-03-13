@@ -15,15 +15,9 @@
 
 .error-title {
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-}
-
-.error-message {
-  font-family: "Roboto", sans-serif;
 }
 
 .report-message {
-  font-family: "Roboto", sans-serif;
   margin-top: 2.5rem;
   text-align: center;
 }

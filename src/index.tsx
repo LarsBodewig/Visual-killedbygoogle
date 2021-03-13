@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Grid from "./Grid/Grid";
+import Table from "./Table/Table";
 import ErrorMessage from "./ErrorMessage/ErrorMessage";
 import "./index.css";
 import Loading from "./Loading/Loading";
@@ -20,7 +20,7 @@ fetchGraveyard()
     const props = { data };
     ReactDOM.render(
       <React.StrictMode>
-        <Grid {...props} />
+        <Table {...props} />
       </React.StrictMode>,
       root
     );
