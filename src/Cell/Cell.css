@@ -1,0 +1,36 @@
+.node {
+  width: 4rem;
+  height: 3rem;
+}
+
+.dot-alive {
+  position: absolute;
+  background-color: #666;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  margin: 0.5rem 1rem;
+  z-index: 2;
+}
+
+.line {
+  position: absolute;
+  background-color: #bbb;
+  height: 0.8rem;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.line-start {
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+.line-end {
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+
+.line-continuous {
+  width: 4rem;
+}

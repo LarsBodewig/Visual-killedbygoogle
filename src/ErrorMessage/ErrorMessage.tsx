@@ -12,7 +12,7 @@ export default class ErrorMessage extends React.Component<{ error: Error }> {
           <img className="error-icon" src={errorIcon} />
           <p className="error-title">Oh no, a {error.name} occured:</p>
         </div>
-        <p className="error-message">{error.message}</p>
+        <p>{error.message}</p>
         <p className="report-message">
           Please consider reporting this issue on <a href="">Github</a>.
         </p>

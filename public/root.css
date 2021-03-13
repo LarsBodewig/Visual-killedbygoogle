@@ -8,6 +8,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Segoe UI", "Roboto", sans-serif;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
 
 .title {
   font-family: monospace;
+  font-weight: normal;
   padding-right: 2rem;
 }
 
@@ -32,11 +34,9 @@ main {
 
 noscript {
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 
 footer {
   flex-shrink: 0;
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
