@@ -1,25 +1,28 @@
 import React from "react";
 import Row from "../Row/Row";
-import { enumerateArray, maxYear, minYear } from "../util/func";
+import { enumerateArray, filterProduct, maxYear, minYear } from "../util/func";
 import { Graveyard } from "../util/types";
 import "./Table.css";
 
-export default class Table extends React.Component<{ data: Graveyard }> {
+export default class Table extends React.Component<{
+  data: Graveyard;
+  start: number;
+  end: number;
+}> {
   render() {
-    const graveyard = this.props.data;
-
-    const min = minYear(graveyard);
-    const max = maxYear(graveyard);
-    const years = enumerateArray(min, max);
+    const { data: graveyard, start, end } = this.props;
+    const years = enumerateArray(start, end);
     const yearHeader = years.map((year) => (
       <th className="head-title-year" key={year}>
         {year}
       </th>
     ));
-    const rows = graveyard.map((product) => {
-      const props = { product, key: product.name, years };
-      return <Row {...props} />;
-    });
+    const rows = graveyard
+      .filter((product) => filterProduct(product, start, end))
+      .map((product) => {
+        const props = { product, key: product.name, years };
+        return <Row {...props} />;
+      });
     return (
       <table className="table">
         <tbody className="tbody">
