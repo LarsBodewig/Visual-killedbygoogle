@@ -1,0 +1,41 @@
+.controls {
+  margin: 0 2rem 2rem;
+}
+
+.noUi-tooltip {
+  display: none;
+}
+.noUi-handle:hover .noUi-tooltip,
+.noUi-active .noUi-tooltip {
+  display: block;
+}
+
+.noUi-connect {
+  background: #bbb;
+}
+
+.noUi-target {
+  box-shadow: none;
+  border-radius: 1rem;
+  height: 10px;
+}
+
+.noUi-origin {
+  top: -4px;
+}
+
+.noUi-handle {
+  background: #666;
+  box-shadow: none;
+  border-radius: 1rem;
+  width: 28px !important;
+}
+
+.noUi-handle:focus {
+  outline: none;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+  display: none;
+}

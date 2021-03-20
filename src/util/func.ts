@@ -1,4 +1,4 @@
-import { Graveyard } from "./types";
+import { Graveyard, Product } from "./types";
 
 export function minYear(graveyard: Graveyard): number {
   return Math.min(
@@ -18,4 +18,10 @@ export function enumerateArray(start: number, end: number): Array<number> {
     array.push(i);
   }
   return array;
+}
+
+export function filterProduct(product: Product, start: number, end: number) {
+  const open = product.dateOpen.getFullYear();
+  const close = product.dateClose.getFullYear();
+  return open <= end && close >= start;
 }

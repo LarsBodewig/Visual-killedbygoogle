@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Table from "./Table/Table";
 import ErrorMessage from "./ErrorMessage/ErrorMessage";
 import "./index.css";
 import Loading from "./Loading/Loading";
 import { fetchGraveyard } from "./util/fetch-graveyard";
+import Visual from "./Visual/Visual";
 
 const root = document.getElementById("root");
 
@@ -20,7 +20,7 @@ fetchGraveyard()
     const props = { data };
     ReactDOM.render(
       <React.StrictMode>
-        <Table {...props} />
+        <Visual {...props} />
       </React.StrictMode>,
       root
     );
