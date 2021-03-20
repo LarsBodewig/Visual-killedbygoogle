@@ -2,6 +2,7 @@ import React from "react";
 import Cell from "../Cell/Cell";
 import { Product } from "../util/types";
 import "./Row.css";
+import linkIcon from "./move-window.svg";
 
 export default class Row extends React.Component<{
   product: Product;
@@ -17,7 +18,10 @@ export default class Row extends React.Component<{
     return (
       <tr className="row">
         <th className="row-title">
-          <p>{product.name}</p>
+          <a className="row-title-link" target="_blank" href={product.link}>
+            {product.name}
+            <img className="link-icon" src={linkIcon} />
+          </a>
         </th>
         {timeline}
       </tr>
