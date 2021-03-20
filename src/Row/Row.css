@@ -11,3 +11,16 @@
   font-weight: normal;
   padding-left: 1rem;
 }
+
+.row-title-link,
+.row-title-link:hover,
+.row-title-link:focus,
+.row-title-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.link-icon {
+  width: 0.75rem;
+  margin-left: 0.25rem;
+}
