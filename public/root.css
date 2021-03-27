@@ -11,7 +11,7 @@ body {
   font-family: "Segoe UI", "Roboto", sans-serif;
 }
 
-header {
+.inner-header {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ noscript {
   text-align: center;
 }
 
-footer {
+.inner-footer {
   flex-shrink: 0;
   text-align: center;
 }

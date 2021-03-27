@@ -1,5 +1,12 @@
+.controls-placeholder {
+  height: 3rem;
+}
+
 .controls {
-  margin: 0 2rem 2rem;
+  position: fixed;
+  width: 90vw;
+  left: 5vw;
+  top: 6rem;
 }
 
 .noUi-tooltip {

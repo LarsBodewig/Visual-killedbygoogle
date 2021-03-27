@@ -20,17 +20,19 @@ export default class Controls extends React.Component<{
     const end = maxYear(data);
 
     return (
-      <div className="controls">
-        <Nouislider
-          range={{ min: start, max: end }}
-          start={[start, end]}
-          tooltips={[tooltip, tooltip]}
-          step={1}
-          connect
-          behaviour={"snap"}
-          animate={false}
-          onChange={changeYears}
-        />
+      <div className="controls-placeholder">
+        <div className="controls">
+          <Nouislider
+            range={{ min: start, max: end }}
+            start={[start, end]}
+            tooltips={[tooltip, tooltip]}
+            step={1}
+            connect
+            behaviour={"snap"}
+            animate={false}
+            onChange={changeYears}
+          />
+        </div>
       </div>
     );
   }

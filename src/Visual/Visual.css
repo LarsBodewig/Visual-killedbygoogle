@@ -1,0 +1,21 @@
+header {
+  padding-top: 5rem;
+}
+
+.inner-header {
+  position: fixed;
+  width: 90vw;
+  left: 5vw;
+  top: 1rem;
+}
+
+footer {
+  padding-bottom: 4rem;
+}
+
+.inner-footer {
+  position: fixed;
+  width: 90vw;
+  left: 5vw;
+  bottom: 0rem;
+}
