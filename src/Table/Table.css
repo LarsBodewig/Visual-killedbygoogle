@@ -1,5 +1,8 @@
 .table {
   border-collapse: collapse;
+  z-index: 10;
+  position: relative;
+  background-color: white;
 }
 
 .head-title {
@@ -7,7 +10,7 @@
   left: 0;
   text-align: left;
   position: sticky;
-  z-index: 4;
+  z-index: 14;
   padding-left: 1rem;
   top: 0;
   padding-top: 1rem;
@@ -17,7 +20,7 @@
 .head-title-year {
   font-weight: normal;
   position: sticky;
-  z-index: 3;
+  z-index: 13;
   top: 0;
   background-color: white;
   padding-top: 1rem;

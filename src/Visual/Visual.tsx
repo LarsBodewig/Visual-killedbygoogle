@@ -3,6 +3,7 @@ import Controls from "../Controls/Controls";
 import Table from "../Table/Table";
 import { maxYear, minYear } from "../util/func";
 import { Graveyard } from "../util/types";
+import "./Visual.css";
 
 export default class Visual extends React.Component<
   { data: Graveyard },
