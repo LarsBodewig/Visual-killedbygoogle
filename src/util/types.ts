@@ -10,3 +10,9 @@ export interface Product {
 }
 
 export type ProductType = "app" | "service" | "hardware";
+
+export class UnhandledCaseError extends Error {
+  constructor(caseSymbol: never) {
+    super(`${caseSymbol} unhandled`);
+  }
+}

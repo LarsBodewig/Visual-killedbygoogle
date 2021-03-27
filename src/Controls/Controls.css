@@ -2,10 +2,41 @@
   height: 3rem;
 }
 
-.controls {
+.control-sort {
   position: fixed;
-  width: 90vw;
+  width: 15vw;
   left: 5vw;
+  top: 5.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.control-dropdown-label {
+  margin-right: 0.7rem;
+}
+
+.control-dropdown {
+  font-size: 1rem;
+  border: none;
+  background-color: #ddd;
+  outline: none;
+}
+
+.control-dropdown-shadow {
+  background-color: #ddd;
+  padding: 0 0.5rem 0.2rem;
+  border-radius: 1rem;
+}
+
+.control-dropdown option {
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background-color: white;
+}
+
+.control-slider {
+  position: fixed;
+  width: 75vw;
+  left: 20vw;
   top: 6rem;
 }
 

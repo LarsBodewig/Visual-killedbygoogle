@@ -1,8 +1,6 @@
-import { LiteralUnion } from "prettier";
-import { Type } from "typescript";
 import graveyardBackup from "../backup/graveyard.json";
 import { GRAVEYARD_URL } from "./constants";
-import { Product, Graveyard, ProductType } from "./types";
+import { Graveyard, ProductType } from "./types";
 
 interface RawGrave {
   name: string;
