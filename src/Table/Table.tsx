@@ -14,7 +14,7 @@ export default class Table extends React.Component<{
     const years = enumerateArray(start, end);
     const yearHeader = years.map((year) => (
       <th className="head-title-year" key={year}>
-        {year}
+        <div className="head-title-year-text">{year}</div>
       </th>
     ));
     const rows = graveyard
@@ -26,7 +26,7 @@ export default class Table extends React.Component<{
     return (
       <table className="table">
         <tbody className="tbody">
-          <tr>
+          <tr className="head-row">
             <th className="head-title">Product</th>
             {yearHeader}
           </tr>

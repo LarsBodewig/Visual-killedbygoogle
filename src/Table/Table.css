@@ -2,27 +2,37 @@
   border-collapse: collapse;
   z-index: 10;
   position: relative;
-  background-color: white;
+  width: 100%;
+}
+
+.head-row {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 14;
+  height: 3rem;
 }
 
 .head-title {
-  background-color: white;
-  left: 0;
-  text-align: left;
   position: sticky;
+  left: 0;
   z-index: 14;
+  text-align: left;
   padding-left: 1rem;
-  top: 0;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  flex: 0 0 12rem;
+  background-color: white;
 }
 
 .head-title-year {
   font-weight: normal;
-  position: sticky;
-  z-index: 13;
-  top: 0;
-  background-color: white;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  flex: 1 0 4rem;
+  background-color: white;
+}
+
+.head-title-year-text {
+  border-left: 0.05rem solid #bbb;
 }

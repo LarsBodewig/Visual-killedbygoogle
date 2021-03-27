@@ -1,6 +1,12 @@
-.node {
-  width: 4rem;
+.cell {
+  flex: 1 0 4rem;
   height: 3rem;
+  background-color: white;
+  border-bottom: 0.05rem solid #cfcfcf;
+}
+
+.node {
+  position: relative;
 }
 
 .dot-alive {
@@ -9,7 +15,7 @@
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem calc(50% - 1rem);
   z-index: 12;
 }
 
@@ -22,15 +28,15 @@
 }
 
 .line-start {
-  width: 2rem;
-  margin-left: 2rem;
+  width: 50%;
+  margin-left: 50%;
 }
 
 .line-end {
-  width: 2rem;
-  margin-bottom: 2rem;
+  width: 50%;
+  margin-bottom: 50%;
 }
 
 .line-continuous {
-  width: 4rem;
+  width: 100%;
 }
