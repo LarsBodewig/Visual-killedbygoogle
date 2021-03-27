@@ -21,7 +21,7 @@ export default class Cell extends React.Component<{
       else line = "line line-continuous";
     }
     return (
-      <td key={year}>
+      <td key={year} className="cell">
         <div className="node">
           <div key={year + "-dot"} className={dot}></div>
           <div key={year + "-line"} className={line}></div>

@@ -1,8 +1,10 @@
 .row {
-  border-bottom: 0.05rem solid #cfcfcf;
+  display: flex;
+  width: 100%;
 }
 
 .row-title {
+  border-bottom: 0.05rem solid #cfcfcf;
   background-color: white;
   left: 0;
   text-align: left;
@@ -10,6 +12,9 @@
   z-index: 13;
   font-weight: normal;
   padding-left: 1rem;
+  flex: 0 0 12rem;
+  display: flex;
+  align-items: center;
 }
 
 .row-title-link,
