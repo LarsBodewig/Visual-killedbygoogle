@@ -1,1 +1,4 @@
-export const text = { graveyardError: "Error loading graveyard json" };
+export const text = {
+  graveyardError: "Error loading graveyard json",
+  identifierProduct: "Product",
+};

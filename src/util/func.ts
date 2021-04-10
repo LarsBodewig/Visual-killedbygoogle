@@ -61,3 +61,7 @@ export function sortProducts(sort: Sort): (a: Product, b: Product) => number {
     }
   };
 }
+
+export function remToPixels(rem: number): number {
+  return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}

@@ -1,14 +1,14 @@
-.controls-placeholder {
-  height: 3rem;
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding: 1rem;
 }
 
 .control-sort {
-  position: fixed;
-  width: 15vw;
-  left: 5vw;
-  top: 5.5rem;
   display: flex;
   flex-direction: row;
+  padding-right: 2rem;
 }
 
 .control-dropdown-label {
@@ -34,10 +34,8 @@
 }
 
 .control-slider {
-  position: fixed;
-  width: 75vw;
-  left: 20vw;
-  top: 6rem;
+  padding: 0.4rem 2rem 0 0;
+  flex: 1 0;
 }
 
 .noUi-tooltip {

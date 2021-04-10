@@ -27,7 +27,7 @@ function loadBackupGraveyard(): RawGrave[] {
 }
 
 function enforceGraveyardType(rawData: RawGrave[]): Graveyard {
-  return graveyardBackup.map(
+  return rawData.map(
     ({ name, description, dateOpen, dateClose, link, type }) => {
       return {
         name,

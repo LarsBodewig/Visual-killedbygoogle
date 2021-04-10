@@ -37,7 +37,7 @@ export default class Controls extends React.Component<{
     ));
 
     return (
-      <div className="controls-placeholder">
+      <div className="controls">
         <div className="control-sort">
           <label className="control-dropdown-label" htmlFor="control-dropdown">
             Sort:

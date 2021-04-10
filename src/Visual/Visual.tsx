@@ -1,21 +1,28 @@
 import React from "react";
 import Controls, { Sort } from "../Controls/Controls";
-import Table from "../Table/Table";
+import Grid from "../Grid/Grid";
 import { maxYear, minYear } from "../util/func";
 import { Graveyard } from "../util/types";
 import "./Visual.css";
 
 export default class Visual extends React.Component<
-  { data: Graveyard },
-  { data: Graveyard; start: number; end: number; sort: Sort }
+  { data: Graveyard; footerHeight: number },
+  {
+    data: Graveyard;
+    footerHeight: number;
+    start: number;
+    end: number;
+    sort: Sort;
+  }
 > {
-  constructor(props: { data: Graveyard }) {
+  constructor(props: { data: Graveyard; footerHeight: number }) {
     super(props);
     this.state = {
       data: this.props.data,
       start: minYear(this.props.data),
       end: maxYear(this.props.data),
       sort: Sort.Raw,
+      footerHeight: this.props.footerHeight,
     };
   }
 
@@ -36,17 +43,17 @@ export default class Visual extends React.Component<
   }
 
   render() {
-    const { data, start, end, sort } = this.state;
+    const { data, start, end, sort, footerHeight } = this.state;
     const controlsProps = {
       data,
       changeYears: this.changeYears.bind(this),
       changeSort: this.changeSort.bind(this),
     };
-    const tableProps = { data, start, end, sort };
+    const gridProps = { data, start, end, sort, footerHeight };
     return (
-      <div>
+      <div className="visual">
         <Controls {...controlsProps} />
-        <Table {...tableProps} />
+        <Grid {...gridProps} />
       </div>
     );
   }

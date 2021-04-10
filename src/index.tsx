@@ -7,6 +7,7 @@ import { fetchGraveyard } from "./util/fetch-graveyard";
 import Visual from "./Visual/Visual";
 
 const root = document.getElementById("root");
+const footer = document.getElementsByTagName("footer")[0];
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +18,7 @@ ReactDOM.render(
 
 fetchGraveyard()
   .then((data) => {
-    const props = { data };
+    const props = { data, footerHeight: footer.offsetHeight };
     ReactDOM.render(
       <React.StrictMode>
         <Visual {...props} />

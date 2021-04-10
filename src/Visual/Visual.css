@@ -1,21 +1,7 @@
-header {
-  padding-top: 5rem;
+#root {
+  height: 100%;
 }
 
-.inner-header {
-  position: fixed;
-  width: 90vw;
-  left: 5vw;
-  top: 1rem;
-}
-
-footer {
-  padding-bottom: 4rem;
-}
-
-.inner-footer {
-  position: fixed;
-  width: 90vw;
-  left: 5vw;
-  bottom: 0rem;
+.visual {
+  height: 100%;
 }
