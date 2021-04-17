@@ -7,6 +7,7 @@
 
 .node {
   position: relative;
+  border-bottom: 0.05rem solid #cfcfcf;
 }
 
 .dot-alive {
@@ -44,4 +45,21 @@
 .link-icon {
   width: 0.75rem;
   margin-left: 0.25rem;
+}
+
+.head-title {
+  display: flex;
+  align-items: center;
+}
+
+.head-title-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-title {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.05rem solid #cfcfcf;
 }
