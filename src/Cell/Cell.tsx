@@ -1,7 +1,5 @@
 import React, { CSSProperties } from "react";
-import { text } from "../util/text";
 import { Product } from "../util/types";
-import linkIcon from "./move-window.svg";
 import "./Cell.css";
 
 export default class Cell extends React.Component<{
@@ -11,40 +9,7 @@ export default class Cell extends React.Component<{
   product: Product;
   year: number;
 }> {
-  header() {
-    const { columnIndex, style, year } = this.props;
-    let content;
-    let className;
-
-    if (columnIndex === 0) {
-      content = text.identifierProduct;
-      className = "head-title";
-    } else {
-      content = year.toString();
-      className = "head-title-year";
-    }
-
-    return (
-      <span style={style} className={className}>
-        {content}
-      </span>
-    );
-  }
-
-  product() {
-    const { product, style } = this.props;
-
-    return (
-      <div className="row-title" style={style}>
-        <a className="row-title-link" target="_blank" href={product.link}>
-          {product.name}
-          <img className="link-icon" src={linkIcon} />
-        </a>
-      </div>
-    );
-  }
-
-  node() {
+  render() {
     const { style, product, year } = this.props;
 
     const open = product.dateOpen.getFullYear();
@@ -65,17 +30,5 @@ export default class Cell extends React.Component<{
         <div key={year + "-line"} className={line}></div>
       </div>
     );
-  }
-
-  render() {
-    const { columnIndex, rowIndex } = this.props;
-
-    if (rowIndex === 0) {
-      return this.header();
-    } else if (columnIndex === 0) {
-      return this.product();
-    } else {
-      return this.node();
-    }
   }
 }

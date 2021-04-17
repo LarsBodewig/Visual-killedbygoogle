@@ -3,6 +3,8 @@ import AutoSizer, { Size } from "react-virtualized-auto-sizer";
 import { VariableSizeGrid } from "react-window";
 import Cell from "../Cell/Cell";
 import { Sort } from "../Controls/Controls";
+import Header from "../Header/Header";
+import Product from "../Product/Product";
 import {
   DEFAULT_CELL_WIDTH,
   ROW_HEIGHT,
@@ -54,7 +56,13 @@ export default class Grid extends React.Component<{
                 year: years[props.columnIndex - 1],
                 product: products[props.rowIndex - 1],
               };
-              return <Cell {...cellProps}></Cell>;
+              if (props.rowIndex === 0) {
+                return <Header {...cellProps}></Header>;
+              } else if (props.columnIndex === 0) {
+                return <Product {...cellProps}></Product>;
+              } else {
+                return <Cell {...cellProps}></Cell>;
+              }
             }}
           </VariableSizeGrid>
         )}
