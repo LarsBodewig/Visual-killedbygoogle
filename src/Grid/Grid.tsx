@@ -1,6 +1,4 @@
 import React from "react";
-import AutoSizer, { Size } from "react-virtualized-auto-sizer";
-import { VariableSizeGrid } from "react-window";
 import Cell from "../Cell/Cell";
 import { Sort } from "../Controls/Controls";
 import Header from "../Header/Header";
@@ -13,6 +11,8 @@ import {
 import { enumerateArray, filterProduct, sortProducts } from "../util/func";
 import { Graveyard } from "../util/types";
 import "./Grid.css";
+import BaseTable, { Column } from "react-base-table";
+//import "react-base-table/styles.css";
 
 export default class Grid extends React.Component<{
   data: Graveyard;
@@ -40,33 +40,15 @@ export default class Grid extends React.Component<{
     const nodeCount = years.length;
 
     return (
-      <AutoSizer className="grid">
-        {(size: Size) => (
-          <VariableSizeGrid
-            columnCount={nodeCount + 1}
-            columnWidth={this.columnWidth(size.width, nodeCount)}
-            height={size.height - footerHeight}
-            rowCount={products.length}
-            rowHeight={() => ROW_HEIGHT}
-            width={size.width}
-          >
-            {(props) => {
-              const cellProps = {
-                ...props,
-                year: years[props.columnIndex - 1],
-                product: products[props.rowIndex - 1],
-              };
-              if (props.rowIndex === 0) {
-                return <Header {...cellProps}></Header>;
-              } else if (props.columnIndex === 0) {
-                return <Product {...cellProps}></Product>;
-              } else {
-                return <Cell {...cellProps}></Cell>;
-              }
-            }}
-          </VariableSizeGrid>
-        )}
-      </AutoSizer>
+      //<AutoResizer>
+      // {({ width, height }) => (
+      <BaseTable width={0} height={0} data={products} className="grid">
+        {products.map((product) => (
+          <Column key={product.name} width={100} flexGrow={1}></Column>
+        ))}
+      </BaseTable>
+      //)}
+      //</AutoResizer>
     );
   }
 }
