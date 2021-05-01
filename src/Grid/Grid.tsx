@@ -40,15 +40,11 @@ export default class Grid extends React.Component<{
     const nodeCount = years.length;
 
     return (
-      //<AutoResizer>
-      // {({ width, height }) => (
-      <BaseTable width={0} height={0} data={products} className="grid">
+      <BaseTable width={0} height={0} data={[]} className="grid">
         {products.map((product) => (
           <Column key={product.name} width={100} flexGrow={1}></Column>
         ))}
       </BaseTable>
-      //)}
-      //</AutoResizer>
     );
   }
 }
