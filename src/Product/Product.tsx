@@ -1,12 +1,12 @@
 import React, { CSSProperties } from "react";
-import { Product } from "../util/types";
+import { Product as ProductData } from "../util/types";
 import linkIcon from "./move-window.svg";
 
-export default class Cell extends React.Component<{
+export default class Product extends React.Component<{
   columnIndex: number;
   rowIndex: number;
   style: CSSProperties;
-  product: Product;
+  product: ProductData;
   year: number;
 }> {
   render() {
